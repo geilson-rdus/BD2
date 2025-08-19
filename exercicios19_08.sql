@@ -100,7 +100,6 @@ from pagar
 union all
 
 select
-
 datename(weekday, rec_vencimento) as Dia,
 rec_vencimento as Vencimento,
 0.00 as Pagar,
@@ -111,7 +110,6 @@ from receber
 /*EXERCÍCIO G*/
 
 select
-
 datename(weekday, Pag_DataVencimento) as Dia,
 Pag_DataVencimento as Vencimento,
 pag_valor as Pagar,
@@ -124,7 +122,6 @@ where pag_valor > 1000
 union all
 
 select
-
 datename(weekday, rec_vencimento) as Dia,
 rec_vencimento as Vencimento,
 0.00 as Pagar,
